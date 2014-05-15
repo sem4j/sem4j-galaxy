@@ -1,0 +1,99 @@
+hugo_symbol	center	variant_classification	variant_type	cell_line	cancer_type	protein_change	mutation
+DFFA	broad.mit.edu	3'UTR	DEL	CCK81	LARGE_INTESTINE		
+DFFA	broad.mit.edu	3'UTR	DEL	JHUEM2	ENDOMETRIUM		
+DFFA	broad.mit.edu	3'UTR	DEL	SNUC4	LARGE_INTESTINE		
+DFFA	broad.mit.edu	3'UTR	SNP	SW48	LARGE_INTESTINE		
+DFFA	broad.mit.edu	3'UTR	SNP	COLO792	SKIN		
+DFFA	broad.mit.edu	Missense_Mutation	SNP	KYSE180	OESOPHAGUS	p.P323S	DFFA_p.P323S
+DFFA	broad.mit.edu	Missense_Mutation	SNP	MKN74	STOMACH	p.R307W	DFFA_p.R307W
+DFFA	broad.mit.edu	Intron	SNP	CALU1	LUNG		
+DFFA	broad.mit.edu	Intron	SNP	SQ1	LUNG		
+DFFA	broad.mit.edu	Intron	SNP	SW780	URINARY_TRACT		
+DFFA	broad.mit.edu	Missense_Mutation	SNP	LS180	LARGE_INTESTINE	p.R246G	DFFA_p.R246G
+DFFA	broad.mit.edu	Frame_Shift_Del	DEL	BICR16	UPPER_AERODIGESTIVE_TRACT	p.Q187fs	DFFA_p.Q187fs
+DFFA	broad.mit.edu	Missense_Mutation	SNP	HCC2935	LUNG	p.R186H	DFFA_p.R186H
+DFFA	broad.mit.edu	Missense_Mutation	SNP	IM95	STOMACH	p.R129G	DFFA_p.R129G
+DFFA	broad.mit.edu	Missense_Mutation	SNP	NCIH2342	LUNG	p.G67C	DFFA_p.G67C
+DFFA	broad.mit.edu	Missense_Mutation	SNP	HCC1428	BREAST	p.L50V	DFFA_p.L50V
+RBM15	broad.mit.edu	5'UTR	SNP	HCC1195	LUNG		
+RBM15	broad.mit.edu	Missense_Mutation	SNP	HEC50B	ENDOMETRIUM	p.L22P	RBM15_p.L22P
+RBM15	broad.mit.edu	Missense_Mutation	SNP	HCC2279	LUNG	p.L22P	RBM15_p.L22P
+RBM15	broad.mit.edu	In_Frame_Del	DEL	NB4	HAEMATOPOIETIC_AND_LYMPHOID_TISSUE	p.RVT30del	RBM15_p.RVT30del
+RBM15	broad.mit.edu	Missense_Mutation	SNP	KM12	LARGE_INTESTINE	p.S103F	RBM15_p.S103F
+RBM15	broad.mit.edu	Missense_Mutation	SNP	EN	ENDOMETRIUM	p.Y112C	RBM15_p.Y112C
+RBM15	broad.mit.edu	Missense_Mutation	SNP	KIJK	HAEMATOPOIETIC_AND_LYMPHOID_TISSUE	p.G149W	RBM15_p.G149W
+RBM15	broad.mit.edu	Missense_Mutation	SNP	GCT	SOFT_TISSUE	p.S158A	RBM15_p.S158A
+RBM15	broad.mit.edu	Missense_Mutation	SNP	NCIH2029	LUNG	p.S158A	RBM15_p.S158A
+RBM15	broad.mit.edu	Missense_Mutation	SNP	MKN1	STOMACH	p.E187D	RBM15_p.E187D
+RBM15	broad.mit.edu	Missense_Mutation	SNP	REH	HAEMATOPOIETIC_AND_LYMPHOID_TISSUE	p.V220A	RBM15_p.V220A
+RBM15	broad.mit.edu	Missense_Mutation	SNP	HEC1A	ENDOMETRIUM	p.D404V	RBM15_p.D404V
+RBM15	broad.mit.edu	Missense_Mutation	SNP	CW2	LARGE_INTESTINE	p.T415N	RBM15_p.T415N
+RBM15	broad.mit.edu	Missense_Mutation	SNP	EFM19	BREAST	p.A430T	RBM15_p.A430T
+RBM15	broad.mit.edu	Missense_Mutation	SNP	NCIH69	LUNG	p.S435Y	RBM15_p.S435Y
+RBM15	broad.mit.edu	Missense_Mutation	SNP	KCL22	HAEMATOPOIETIC_AND_LYMPHOID_TISSUE	p.V459M	RBM15_p.V459M
+RBM15	broad.mit.edu	Missense_Mutation	SNP	HEC59	ENDOMETRIUM	p.E498K	RBM15_p.E498K
+RBM15	broad.mit.edu	Missense_Mutation	SNP	MDAMB453	BREAST	p.R520Q	RBM15_p.R520Q
+RBM15	broad.mit.edu	Missense_Mutation	SNP	HT115	LARGE_INTESTINE	p.D626N	RBM15_p.D626N
+RBM15	broad.mit.edu	Missense_Mutation	SNP	OC316	OVARY	p.P633T	RBM15_p.P633T
+RBM15	broad.mit.edu	Missense_Mutation	SNP	HEC151	ENDOMETRIUM	p.P639H	RBM15_p.P639H
+RBM15	broad.mit.edu	In_Frame_Del	DEL	SNU1	STOMACH	p.P671del	RBM15_p.P671del
+RBM15	broad.mit.edu	Missense_Mutation	SNP	TF1	HAEMATOPOIETIC_AND_LYMPHOID_TISSUE	p.S708G	RBM15_p.S708G
+RBM15	broad.mit.edu	Missense_Mutation	SNP	NCIH1436	LUNG	p.R732Q	RBM15_p.R732Q
+RBM15	broad.mit.edu	Missense_Mutation	SNP	PF382	HAEMATOPOIETIC_AND_LYMPHOID_TISSUE	p.T737I	RBM15_p.T737I
+RBM15	broad.mit.edu	In_Frame_Del	DEL	PF382	HAEMATOPOIETIC_AND_LYMPHOID_TISSUE	p.E746del	RBM15_p.E746del
+RBM15	broad.mit.edu	Missense_Mutation	SNP	CAL148	BREAST	p.A759V	RBM15_p.A759V
+RBM15	broad.mit.edu	Missense_Mutation	SNP	NCIH1793	LUNG	p.S765Y	RBM15_p.S765Y
+RBM15	broad.mit.edu	Missense_Mutation	SNP	NCIH1781	LUNG	p.P864S	RBM15_p.P864S
+RBM15	broad.mit.edu	Missense_Mutation	SNP	KALS1	CENTRAL_NERVOUS_SYSTEM	p.K914R	RBM15_p.K914R
+RBM15	broad.mit.edu	Missense_Mutation	SNP	SNU1040	LARGE_INTESTINE	p.A941T	RBM15_p.A941T
+RBM15	broad.mit.edu	Missense_Mutation	SNP	LMSU	STOMACH	p.I960T	RBM15_p.I960T
+RBM15	broad.mit.edu	Missense_Mutation	SNP	ESS1	ENDOMETRIUM	p.E965D	RBM15_p.E965D
+MTOR	broad.mit.edu	3'UTR	SNP	MFE319	ENDOMETRIUM		
+MTOR	broad.mit.edu	3'UTR	SNP	L540	HAEMATOPOIETIC_AND_LYMPHOID_TISSUE		
+MTOR	broad.mit.edu	3'UTR	SNP	KMS12BM	HAEMATOPOIETIC_AND_LYMPHOID_TISSUE		
+MTOR	broad.mit.edu	3'UTR	INS	EN	ENDOMETRIUM		
+MTOR	broad.mit.edu	3'UTR	SNP	MFE319	ENDOMETRIUM		
+MTOR	broad.mit.edu	Missense_Mutation	SNP	COLO684	ENDOMETRIUM	p.T2509A	MTOR_p.T2509A
+MTOR	broad.mit.edu	Missense_Mutation	SNP	COLO704	OVARY	p.T2509A	MTOR_p.T2509A
+MTOR	broad.mit.edu	Missense_Mutation	SNP	JHOM2B	OVARY	p.I2500F	MTOR_p.I2500F
+MTOR	broad.mit.edu	Missense_Mutation	SNP	L1236	HAEMATOPOIETIC_AND_LYMPHOID_TISSUE	p.P2490A	MTOR_p.P2490A
+MTOR	broad.mit.edu	Missense_Mutation	SNP	MOLT16	HAEMATOPOIETIC_AND_LYMPHOID_TISSUE	p.R2430M	MTOR_p.R2430M
+MTOR	broad.mit.edu	Missense_Mutation	SNP	ST486	HAEMATOPOIETIC_AND_LYMPHOID_TISSUE	p.L2427R	MTOR_p.L2427R
+MTOR	broad.mit.edu	Splice_Site_SNP	SNP	SW48	LARGE_INTESTINE	p.V2389_splice	MTOR_p.V2389_splice
+MTOR	broad.mit.edu	Missense_Mutation	SNP	HEC108	ENDOMETRIUM	p.R2368Q	MTOR_p.R2368Q
+MTOR	broad.mit.edu	Missense_Mutation	SNP	NCIH446	LUNG	p.M2345V	MTOR_p.M2345V
+MTOR	broad.mit.edu	Missense_Mutation	SNP	L540	HAEMATOPOIETIC_AND_LYMPHOID_TISSUE	p.H2340R	MTOR_p.H2340R
+MTOR	broad.mit.edu	Missense_Mutation	SNP	SNU520	STOMACH	p.H2265P	MTOR_p.H2265P
+MTOR	broad.mit.edu	Missense_Mutation	SNP	HEC1A	ENDOMETRIUM	p.R2254M	MTOR_p.R2254M
+MTOR	broad.mit.edu	Missense_Mutation	SNP	CW2	LARGE_INTESTINE	p.G2238D	MTOR_p.G2238D
+MTOR	broad.mit.edu	Missense_Mutation	SNP	KMH2	HAEMATOPOIETIC_AND_LYMPHOID_TISSUE	p.T2232I	MTOR_p.T2232I
+MTOR	broad.mit.edu	Missense_Mutation	SNP	SNU1196	BILIARY_TRACT	p.S2231W	MTOR_p.S2231W
+MTOR	broad.mit.edu	Missense_Mutation	SNP	HEC251	ENDOMETRIUM	p.R2217W	MTOR_p.R2217W
+MTOR	broad.mit.edu	Missense_Mutation	SNP	JHUEM7	ENDOMETRIUM	p.S2215Y	MTOR_p.S2215Y
+MTOR	broad.mit.edu	Missense_Mutation	SNP	A375	SKIN	p.R2152C	MTOR_p.R2152C
+MTOR	broad.mit.edu	Nonsense_Mutation	SNP	NCIH1792	LUNG	p.Q2072*	MTOR_p.Q2072*
+MTOR	broad.mit.edu	Missense_Mutation	SNP	BCP1	HAEMATOPOIETIC_AND_LYMPHOID_TISSUE	p.G2030V	MTOR_p.G2030V
+MTOR	broad.mit.edu	Missense_Mutation	SNP	BL41	HAEMATOPOIETIC_AND_LYMPHOID_TISSUE	p.I2017T	MTOR_p.I2017T
+MTOR	broad.mit.edu	Missense_Mutation	SNP	SNU738	CENTRAL_NERVOUS_SYSTEM	p.L2016R	MTOR_p.L2016R
+MTOR	broad.mit.edu	Missense_Mutation	SNP	UBLC1	URINARY_TRACT	p.E2014K	MTOR_p.E2014K
+MTOR	broad.mit.edu	Missense_Mutation	SNP	TUHR10TKB	KIDNEY	p.V2006L	MTOR_p.V2006L
+MTOR	broad.mit.edu	Missense_Mutation	SNP	TEN	ENDOMETRIUM	p.A1986T	MTOR_p.A1986T
+MTOR	broad.mit.edu	Missense_Mutation	SNP	MFE319	ENDOMETRIUM	p.K1981E	MTOR_p.K1981E
+MTOR	broad.mit.edu	Missense_Mutation	SNP	KMRC2	KIDNEY	p.Y1974H	MTOR_p.Y1974H
+MTOR	broad.mit.edu	Missense_Mutation	SNP	GP2D	LARGE_INTESTINE	p.T1948M	MTOR_p.T1948M
+MTOR	broad.mit.edu	Splice_Site_SNP	SNP	LOVO	LARGE_INTESTINE	p.V1938_splice	MTOR_p.V1938_splice
+MTOR	broad.mit.edu	Missense_Mutation	SNP	CORL23	LUNG	p.E1921V	MTOR_p.E1921V
+MTOR	broad.mit.edu	Missense_Mutation	SNP	ISHIKAWAHERAKLIO02ER	ENDOMETRIUM	p.T1903I	MTOR_p.T1903I
+MTOR	broad.mit.edu	Nonsense_Mutation	SNP	SNUC5	LARGE_INTESTINE	p.R1896*	MTOR_p.R1896*
+MTOR	broad.mit.edu	Missense_Mutation	SNP	SNU81	LARGE_INTESTINE	p.L1894V	MTOR_p.L1894V
+MTOR	broad.mit.edu	Missense_Mutation	SNP	NCIH522	LUNG	p.T1837N	MTOR_p.T1837N
+MTOR	broad.mit.edu	Missense_Mutation	SNP	IPC298	SKIN	p.A1836T	MTOR_p.A1836T
+MTOR	broad.mit.edu	Missense_Mutation	SNP	RERFLCAD1	LUNG	p.A1836T	MTOR_p.A1836T
+MTOR	broad.mit.edu	Missense_Mutation	SNP	SNGM	ENDOMETRIUM	p.G1822V	MTOR_p.G1822V
+MTOR	broad.mit.edu	Missense_Mutation	SNP	QGP1	PANCREAS	p.R1811H	MTOR_p.R1811H
+MTOR	broad.mit.edu	Missense_Mutation	SNP	NCIH522	LUNG	p.V1801G	MTOR_p.V1801G
+MTOR	broad.mit.edu	Missense_Mutation	SNP	HS683	CENTRAL_NERVOUS_SYSTEM	p.E1799K	MTOR_p.E1799K
+MTOR	broad.mit.edu	Missense_Mutation	SNP	SNU349	KIDNEY	p.E1799K	MTOR_p.E1799K
+MTOR	broad.mit.edu	Missense_Mutation	SNP	HEC59	ENDOMETRIUM	p.E1799K	MTOR_p.E1799K
+MTOR	broad.mit.edu	Intron	SNP	SNU175	LARGE_INTESTINE		
+MTOR	broad.mit.edu	Intron	SNP	LN229	CENTRAL_NERVOUS_SYSTEM		

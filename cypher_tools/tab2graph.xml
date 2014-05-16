@@ -1,5 +1,5 @@
 <tool id="tab2graph" name="Tab-to-Graph" version="0.2">
-  <description>Converter 2</description>
+  <description>Converter</description>
   <command interpreter="python">
     tab2graph.py $input_file $h $output_file_n $output_file_r '$def_n' '$def_r'
   </command>
@@ -33,5 +33,8 @@
   </outputs>
   <help>
 **What it does**
+Example:
+[{"column":"1","type":"tf","properties":[]},{"column":"3","type":"gene","properties":[]}]
+[{"source":"1","target":"3","type":"regulates","properties":[]}]
   </help>
 </tool>

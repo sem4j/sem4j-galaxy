@@ -1,5 +1,5 @@
 <tool id="graph2db" name="Graph-to-DB" version="0.2.1">
-  <description>Loader</description>
+  <description>Loader (old)</description>
   <command interpreter="node">
     neo4j_loader.js $input_file_n $input_file_r $namespace $host $port 1 > $log_file
   </command>

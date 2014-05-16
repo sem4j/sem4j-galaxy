@@ -3,7 +3,7 @@
 # '[{"column":"c1","name":"person","properties":[{"column":"c2","name":"sex"},{"column":"c3","name":"age"}]}, {"column":"c4","name":"dept","properties":[{"column":"c5","name":"tel"}]}]' \
 # '[{"source":"c1","target":"c4","name":"belongs_to","properties":[{"column":"c7","name":"year"}]}]' 
 
-import sys, time, json, sqlite_lib
+import sys, time, json, commands
 
 argvs = sys.argv
 
@@ -22,83 +22,43 @@ print(nodes)
 print(relations_json)
 print(relations)
 
-conn = sqlite_lib.connect()
-sqlite_lib.load(conn, 'input_table', input_file, input_header, '')
-cur = conn.cursor()
-
-# CREATE NODE TABLE
-str_create_n = 'CREATE TABLE node_table (id, type);'
-print(str_create_n)
-time_start = time.time()
-cur.execute(str_create_n)
-print('Elapsed Time: ' + str(time.time() - time_start) + '\n')
-
-# LOAD DATA (NODE_TABLE)
-str_insert_n = "INSERT INTO node_table"
-for n in nodes:
-    str_insert_n += " SELECT DISTINCT " + n['column'] + ", '" + n['name'] + "' FROM input_table"
-    if n != nodes[-1]:
-        str_insert_n += " UNION"
-    else:
-        str_insert_n += ";"
-print(str_insert_n)
-time_start = time.time()
-cur.execute(str_insert_n)
-conn.commit()
-print('Elapsed Time: ' + str(time.time() - time_start) + '\n')
-
-# CREATE INDEX (NODE_TABLE)
-str_index_n = 'CREATE INDEX idx_node ON node_table(id);'
-print(str_index_n)
-time_start = time.time()
-cur.execute(str_index_n)
-print('Elapsed Time: ' + str(time.time() - time_start) + '\n')
-
 # SELECT (NODE)
-sql = ""
 for n in nodes:
     properties = n['properties']
-    if len(properties) == 0:
-        sql_properties = ", '{}'"
-    else:
-        sql_properties = ", '{'||"
+    str_prop = ""
+    if len(properties) != 0:
+        str_prop = ","
         for p in properties:
-            sql_properties += "'\"" + p['name'] + "\":\"'||i." + p['column'] + "||'\"'"
+            str_prop += p['type'] + ":\" APOST $" + p['column'] + " APOST \""
             if p != properties[-1]:
-                sql_properties += "||','||"
+                str_prop += ","
             else:
-                sql_properties += "||'}'"
-    sql += "SELECT DISTINCT n.rowid, n.type, n.id" + sql_properties + "\n"
-    sql += "FROM input_table i, node_table n\n"
-    sql += "WHERE n.id = i." + n['column'] + " AND type = '" + n['name'] + "'\n"
-    if n != nodes[-1]:
-        sql += "  UNION ALL\n"
-    else:
-        sql += ";"
-sqlite_lib.execute(conn, sql, output_file_n, '0', '0')
+                str_prop += ""
+    str_awk = "awk -v APOST=\\' '{ print \"" 
+    str_awk = str_awk + "CREATE (n:ALL:`" + n['type'] + "` "
+    str_awk = str_awk + "{uri:\" APOST $" + n['column'] + " APOST \","
+    str_awk = str_awk + "type:\" APOST \"" + n['type'] + "\" APOST \""
+    str_awk = str_awk + str_prop + "});\"}' " + input_file
+    cmd = str_awk + " | sort -t\\t -k1,1 | uniq >> " + output_file_n
+    print cmd + "\n"
+    commands.getoutput(cmd)
 
 # SELECT (RELATION)
-sql = ""
 for r in relations:
+    str_awk = ""
     properties = r['properties']
-    if len(properties) == 0:
-        sql_properties = ", '{}'"
-    else:
-        sql_properties = ", '{'||"
+    str_prop = ""
+    if len(properties) != 0:
         for p in properties:
-            sql_properties += "'\"" + p['name'] + "\":\"'||i." + p['column'] + "||'\"'"
+            str_prop += p['type'] + ":\" APOST $" + p['column'] + " APOST \""
             if p != properties[-1]:
-                sql_properties += "||','||"
+                str_prop += ","
             else:
-                sql_properties += "||'}'"
-    sql += "SELECT DISTINCT n1.rowid, n2.rowid, '" + r['name'] + "'" + sql_properties + "\n"
-    sql += "FROM input_table i, node_table n1, node_table n2\n"
-    sql += "WHERE n1.id = i." + r['source'] + " AND n2.id = i." + r['target'] + "\n"
-    if r != relations[-1]:
-        sql += " UNION ALL\n"
-    else:
-        sql += ";"
-sqlite_lib.execute(conn, sql, output_file_r, '0', '0')
-
-cur.close();
-conn.close();
+                str_prop += ""
+    str_awk = "awk -v APOST=\\' '{ print \""
+    str_awk = str_awk + "MATCH (a:ALL {uri:\" APOST $" + r['source'] + " APOST \"})"
+    str_awk = str_awk + ", (b:ALL {uri:\" APOST $" + r['target'] + " APOST \"}) "
+    str_awk = str_awk + "CREATE (a)-[r:`" + r['type'] + "` {" + str_prop + "}]->(b);\"}' " + input_file
+    cmd = str_awk + " | sort -t\\t -k1,1 | uniq >> " + output_file_r
+    print cmd + "\n"
+    commands.getoutput(cmd)
